@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<title>הזמנה לברית – בלונים</title>
+<style>
+@font-face{font-family:'Frank Ruhl Libre';font-weight:300;src:url(fonts/FrankRuhlLibre-300.ttf);}
+@font-face{font-family:'Frank Ruhl Libre';font-weight:400;src:url(fonts/FrankRuhlLibre-400.ttf);}
+@font-face{font-family:'Frank Ruhl Libre';font-weight:500;src:url(fonts/FrankRuhlLibre-500.ttf);}
+@font-face{font-family:'Frank Ruhl Libre';font-weight:700;src:url(fonts/FrankRuhlLibre-700.ttf);}
+@font-face{font-family:'Frank Ruhl Libre';font-weight:900;src:url(fonts/FrankRuhlLibre-900.ttf);}
+@font-face{font-family:'Playpen Sans Hebrew';font-weight:400;src:url(fonts/PlaypenSansHebrew-400.ttf);}
+@font-face{font-family:'Playpen Sans Hebrew';font-weight:700;src:url(fonts/PlaypenSansHebrew-700.ttf);}
+:root{--navy:#13336f;--blue:#3f6db3;--gold:#b8914a;}
+@page{size:148mm 210mm;margin:0}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#888;font-family:'Frank Ruhl Libre',serif;color:var(--navy)}
+@media print{body{background:none}}
+.card{width:148mm;height:210mm;margin:0 auto;position:relative;overflow:hidden;background:url(bg.jpg) center top/cover}
+.card::after{content:"";position:absolute;inset:0;pointer-events:none;
+ background:radial-gradient(ellipse 80% 40% at 50% 62%,rgba(255,252,244,.55),rgba(255,252,244,0) 75%)}
+.content{position:absolute;z-index:2;left:0;right:0;top:84mm;bottom:0;padding:0 14mm;display:flex;flex-direction:column;align-items:center;text-align:center}
+.bsd{position:absolute;z-index:3;top:8mm;right:11mm;font-size:11pt;font-weight:700;color:var(--navy)}
+.praise{font-size:11.5pt;line-height:1.5;font-weight:500;color:#2a4a86}
+.praise b{font-weight:900;color:var(--navy)}
+.lead{margin-top:4mm;font-weight:500;font-size:15pt;color:var(--blue);line-height:1.2}
+.hero{margin-top:1mm;font-weight:900;font-size:24pt;line-height:1.12;color:var(--navy)}
+.hero span{display:block;font-weight:900;font-size:24pt;color:var(--gold);margin-top:1mm}
+.orn{margin:3mm 0 3mm;width:58mm;height:5mm;flex-shrink:0}
+.when{display:flex;align-items:stretch;justify-content:center;gap:0;width:116mm}
+.when>div{flex:1;padding:0 3mm}
+.when>div+div{border-right:.3mm solid rgba(19,51,111,.35)}
+.k{font-size:10pt;color:var(--gold);font-weight:900}
+.v{font-weight:900;font-size:16pt;line-height:1.1;margin-top:1mm}
+.s{font-size:10.5pt;font-weight:500;color:#2a4a86;margin-top:.8mm}
+.venue{margin-top:3mm}
+.venue .v{font-size:15pt}
+.foot{margin-top:auto;padding-bottom:13mm;padding-top:3mm}
+.simcha{font-size:11pt;font-weight:500;color:#2a4a86}
+.names{font-weight:900;font-size:21pt;color:var(--navy);margin-top:1mm}
+</style>
+</head>
+<body>
+<div class="card">
+ <div class="bsd">בס״ד</div>
+ <div class="content">
+  <p class="praise">בשבח והודיה לבורא יתברך על כל הטוב אשר גמלנו,<br>ובפרט על <b>הולדת בננו נ״י</b></p>
+  <div class="lead">הננו שמחים להודיע</div>
+  <h1 class="hero">על היכנסו בבריתו של<span>אברהם אבינו בע״ה</span></h1>
+  <svg class="orn" viewBox="0 0 58 5"><g stroke="#b8914a" stroke-width=".3" fill="none"><path d="M0 2.5H22M36 2.5H58"/><path d="M29 .3L31.3 4.2H26.7Z M29 4.7L26.7.8H31.3Z" stroke-width=".45"/></g></svg>
+  <div class="when">
+   <div><div class="k">ביום</div><div class="v">ראשון</div><div class="s">י״ב כסלו</div></div>
+   <div><div class="k">בשעה</div><div class="v">13:30</div><div class="s">מנחה ב־13:15</div></div>
+  </div>
+  <div class="venue"><div class="k">באולם</div><div class="v">רינת יוסף</div><div class="s">רחוב תורה ועבודה 8</div></div>
+  <div class="foot"><div class="simcha">בשמחות אצלכם</div><div class="names">שלמה ומיכל בנשעיה</div></div>
+ </div>
+</div>
+</body></html>
